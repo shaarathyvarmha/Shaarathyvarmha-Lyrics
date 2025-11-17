@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shaarathyvarmha S — Lyricist Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Noto+Sans+Tamil:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #F6F1EA;
+      --text: #331f14;
+      --muted: #7a6551;
+      --accent: #b88a3e;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, Noto Sans Tamil, sans-serif;
+      line-height: 1.5;
+      padding: 20px;
+    }
+
+    .wrap {
+      max-width: 1100px;
+      margin: auto;
+      background: #ffffffea;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 8px 28px rgba(0,0,0,0.06);
+    }
+
+    header {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      margin-bottom: 28px;
+    }
+
+    .brand {
+      width: 68px;
+      height: 68px;
+      border-radius: 14px;
+      background: #fff3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #0001;
+    }
+
+    .brand div {
+      font-family: "Playfair Display", serif;
+      font-size: 24px;
+      color: var(--accent);
+    }
+
+    h1 {
+      margin: 0;
+      font-family: "Playfair Display", serif;
+    }
+
+    .section {
+      margin-bottom: 32px;
+      padding: 20px;
+      background: #ffffffdd;
+      border-radius: 12px;
+      border: 1px solid #0001;
+    }
+
+    h2 {
+      margin: 0 0 10px 0;
+      font-family: "Playfair Display", serif;
+      font-size: 20px;
+    }
+
+    .muted {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .embed {
+      width: 100%;
+      height: 360px;
+      border-radius: 12px;
+      overflow: hidden;
+      background: #000;
+      margin-top: 12px;
+    }
+
+    .embed iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .pdf-box iframe {
+      width: 100%;
+      height: 500px;
+      border-radius: 12px;
+      border: none;
+    }
+
+    .btn {
+      background: var(--accent);
+      color: white;
+      padding: 10px 16px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 14px;
+      display: inline-block;
+    }
+
+    .socials {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 12px;
+    }
+
+    .socials a {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: #ffffffbb;
+      border: 1px solid #0001;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+      color: var(--text);
+      font-size: 20px;
+    }
+
+    /* other alt additivities fro spotify */
+
+.spotify-card {
+  border-radius: 14px;
+  overflow: hidden;
+  background: #fff9;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+  margin-top: 14px;
+}
+
+.spotify-card iframe {
+  width: 100%;
+  height: 180px; /* smaller, cute */
+  border: none;
+}
+/* other alt additivities for sound cloud */
+
+/* SoundCloud Beautiful Card UI */
+.sc-card {
+  background: linear-gradient(135deg, #fffdf8 0%, #f8f2e9 100%);
+  border-radius: 16px;
+  padding: 16px;
+  border: 1px solid rgba(0,0,0,0.06);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.05);
+  margin-top: 16px;
+}
+
+.sc-card-title {
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+  margin: 0 0 8px 0;
+  color: #4a3527;
+}
+
+.sc-card-sub {
+  font-size: 13px;
+  color: #7a6551;
+  margin-bottom: 10px;
+}
+
+.sc-embed {
+  width: 100%;
+  height: 160px; /* cute size */
+  overflow: hidden;
+  border-radius: 12px;
+  background: #000;
+}
+
+.sc-embed iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.sc-profile-card {
+  background: linear-gradient(135deg, #fffef9 0%, #f5f0e7 100%);
+  border-radius: 16px;
+  padding: 16px;
+  margin-top: 16px;
+  border: 1px solid rgba(0,0,0,0.06);
+  box-shadow: 0 6px 22px rgba(0,0,0,0.05);
+}
+
+.sc-profile-title {
+  font-family: "Playfair Display", serif;
+  font-size: 16px;
+  margin: 0 0 8px 0;
+  color: #4a3527;
+}
+
+.sc-profile-sub {
+  font-size: 13px;
+  color: #7a6551;
+  margin-bottom: 10px;
+}
+
+.sc-profile-embed {
+  width: 100%;
+  height: 420px; /* shows multiple songs */
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.sc-profile-embed iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Socials */
+
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.socials a {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: #ffffffdd;
+  border: 1px solid rgba(0,0,0,0.06);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text);
+  text-decoration: none;
+  transition: 0.25s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.socials a:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.10);
+}
+
+/* Footer credit style */
+.footer-credit {
+  margin-top: 22px;
+  text-align: center;
+  font-size: 13px;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+
+  </style>
+</head>
+
+<body>
+<div class="wrap">
+
+  <!-- HEADER -->
+  <header>
+    <div class="brand"><div>SV</div></div>
+    <div>
+      <h1>Shaarathyvarmha S</h1>
+      <div class="muted"> Lyricist </div>
+    </div>
+  </header>
+
+  <!-- SPOTIFY SECTION -->
+<section class="section">
+  <h2>Spotify Releases</h2>
+  <div class="muted">My official works published on Spotify.</div>
+
+  <!-- Spotify Playlist Embed (kept large) -->
+  <div class="embed" style="height: 260px; margin-top:14px;">
+    <iframe 
+      src="https://open.spotify.com/embed/playlist/2v6Qu1WvxvmMbOFRQpsY9f?utm_source=generator"
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+    </iframe>
+  </div>
+
+  <!-- Individual Tracks as cute cards -->
+  <div class="spotify-card">
+    <iframe src="https://open.spotify.com/embed/track/5pZstQGpYxQ48bSK9QDVLZ?utm_source=generator"
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </div>
+
+  <div class="spotify-card">
+    <iframe src="https://open.spotify.com/embed/track/6LbOcPrk8a84yzUFgcFTq9?utm_source=generator"
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </div>
+
+  <div class="spotify-card">
+    <iframe src="https://open.spotify.com/embed/track/19ucy7PdRlvTMx5PUoJQ1g?utm_source=generator"
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </div>
+
+  <!-- ADD MORE SONGS BELOW -->
+</section>
+
+
+  <!-- SOUNDCLOUD -->
+  <!-- SOUNDCLOUD -->
+<section class="section">
+  <h2>SoundCloud Demos (Suno AI)</h2>
+  <div class="muted">Concept demos & Suno-generated works.</div>
+
+  <!-- SOUNDCLOUD PROFILE FEED CARD -->
+  <div class="sc-profile-card">
+    <div class="sc-profile-title">SoundCloud — Full Demo Feed</div>
+    <div class="sc-profile-sub">All Suno AI demos + original concept tracks</div>
+
+    <div class="sc-profile-embed">
+      <iframe 
+        src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/shaarathy-varmha&show_artwork=true&visual=false"
+        allow="autoplay">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+
+  <!-- LYRICS PDF -->
+  <section class="section">
+    <h2>Writing Samples</h2>
+    <div class="muted">Download or view my complete lyric sample book.</div>
+
+    <div style="margin-top:10px; display:flex; gap:10px; flex-wrap:wrap;">
+      <a class="btn" href="assets/portfolio.pdf" download>Download PDF</a>
+      <a class="btn" href="E:\Varmha\Lyric portfolio\Shaarathyvarmha Lyrics.pdf" target="_blank">View PDF Online</a>
+    </div>
+
+    <div class="pdf-box" style="margin-top:14px;">
+      <iframe src="https://drive.google.com/drive/folders/1AtxELYXGxrsbc4x-CLSG_StCZ_0rxXj9?usp=sharing"></iframe>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section">
+    <h2>Contact & Socials</h2>
+
+    <div class="muted">Reach out for collaborations and projects.</div>
+
+    <div style="margin-top:12px; font-weight:600;">Email:</div>
+    <div class="muted">shaadhirawhispers@gmail.com</div>
+
+    <div class="socials">
+
+  <!-- WhatsApp -->
+  <a href="https://wa.me/9384547264" target="_blank" title="WhatsApp">
+    <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M20.52 3.48A11.86 11.86 0 0012 0a11.86 11.86 0 00-8.52 3.48A11.86 11.86 0 000 12c0 2.11.55 4.17 1.6 6L0 24l6.2-1.6A12 12 0 0024 12a11.86 11.86 0 00-3.48-8.52zM12 21a9 9 0 01-4.62-1.3l-.33-.2-3.68.95.98-3.6-.22-.35A9 9 0 1121 12a9 9 0 01-9 9zm5.2-6.85c-.29-.15-1.71-.84-1.98-.94s-.46-.15-.65.15-.74.94-.9 1.14-.33.22-.62.07a7.39 7.39 0 01-2.17-1.34 8.14 8.14 0 01-1.5-1.84c-.16-.29 0-.45.12-.6l.33-.38c.11-.15.15-.26.22-.44s0-.33-.03-.46-.65-1.57-.89-2.15c-.24-.57-.46-.48-.65-.48h-.56c-.18 0-.44.06-.67.33s-.88.86-.88 2.1.9 2.43 1 2.6a12.57 12.57 0 004.9 4.84c.68.37 1.21.59 1.62.75a3.9 3.9 0 001.79.11c.55-.08 1.71-.7 1.95-1.37s.24-1.25.17-1.37-.26-.22-.55-.37z"/>
+    </svg>
+  </a>
+
+  <!-- Email -->
+  <a href="mailto:shaadhirawhispers@gmail.com" title="Email">
+    <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <path d="M4 4h16v16H4z"/>
+      <path d="M22 4L12 14 2 4"/>
+    </svg>
+  </a>
+
+  <!-- Instagram -->
+  <a href="https://www.instagram.com/varmha_a6/" target="_blank" title="Instagram">
+    <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+      <rect x="2" y="2" width="20" height="20" rx="6" ry="6"/>
+      <circle cx="12" cy="12" r="4"/>
+      <circle cx="17.5" cy="6.5" r="1.5"/>
+    </svg>
+  </a>
+
+  <!-- Threads -->
+  <a href="https://www.threads.net/@varmha_a6" target="_blank" title="Threads">
+    <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24">
+      <path d="M12 3c4.7 0 9 3.2 9 9s-3.8 9-9 9-9-3.4-9-9 4.3-9 9-9zm4.1 10.2c-.3 2-1.9 3.5-4.1 3.5-2.9 0-4.6-2.4-4.6-4.8C7.4 9 9.2 6.7 12 6.7c1.8 0 3.1.8 4 2m-2.3 2.2c-.4-.7-1.1-1.1-1.8-1.1-1.3 0-2.2 1-2.2 2.2 0 1.3 1 2.3 2.2 2.3 1.2 0 1.9-.9 2.1-1.5"/>
+    </svg>
+  </a>
+
+  <!-- LinkedIn -->
+  <a href="https://www.linkedin.com/in/shaarathyvarmha-s-030201247/" target="_blank" title="LinkedIn">
+    <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M4.98 3.5A2.5 2.5 0 017.5 6a2.5 2.5 0 11-5 0 2.5 2.5 0 012.48-2.5zM3 8h5v13H3zM10 8h4.7v1.8h.1c.7-1.2 2.3-2.3 4.5-2.3 4.8 0 5.7 3.2 5.7 7.4V21h-5v-5.8c0-1.4 0-3.2-2-3.2s-2.4 1.5-2.4 3V21h-5V8z"/>
+    </svg>
+  </a>
+
+  <!-- Linktree -->
+  <a href="https://linktr.ee/Shaarathyvarmha" target="_blank" title="Linktree">
+    <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24">
+      <path d="M5 3h4v8H5zM15 3h4v8h-4zM15 13h4v8h-4zM5 13h4v8H5z"/>
+    </svg>
+  </a>
+
+  <!-- Spotify Artist -->
+  <a href="https://open.spotify.com/artist/56AffhSWyISxCsrKYe7y6f" target="_blank" title="Spotify">
+    <svg width="22" height="22" fill="currentColor" viewBox="0 0 168 168">
+      <path d="M84 0a84 84 0 1 0 0 168A84 84 0 0 0 84 0zm38 121a4 4 0 0 1-6 1c-18-11-40-14-67-8a4 4 0 1 1-2-8c29-6 54-3 75 9a4 4 0 0 1 1 6z"/>
+    </svg>
+  </a>
+
+  <!-- Facebook -->
+  <a href="https://facebook.com/" target="_blank" title="Facebook">
+    <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M22 12a10 10 0 1 0-11.5 9.9v-7H7.5v-3h3v-2.3c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v3h-1.5c-1.5 0-2 1-2 2V12h3.4l-.5 3h-2.9v7A10 10 0 0 0 22 12z"/>
+    </svg>
+  </a>
+
+  <!-- X / Twitter -->
+  <a href="https://x.com/" target="_blank" title="X (Twitter)">
+    <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M18 2h4l-9 11 9 11h-4l-7-9-7 9H0l9-11L0 2h4l7 9 7-9z"/>
+    </svg>
+  </a>
+
+</div>
+
+<!-- FOOTER CREDIT -->
+<div class="footer-credit">
+  © 2025 • Built by <strong>A6Tech</strong>
+</div>
+
+  </section>
+
+</div>
+</body>
+</html>
