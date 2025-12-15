@@ -28,13 +28,14 @@
     }
 
     .wrap {
-      max-width: 1100px;
-      margin: auto;
-      background: #ffffffea;
-      border-radius: 16px;
-      padding: 24px;
-      box-shadow: 0 8px 28px rgba(0,0,0,0.06);
-    }
+  max-width: 1100px;
+  margin: auto;
+  padding: 12px;
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+}
+
 
     header {
       display: flex;
@@ -65,9 +66,11 @@
       font-family: "Playfair Display", serif;
     }
 
-    .section {
-  margin-bottom: 40px;
-  padding: 0;
+  
+
+.section {
+  margin-bottom: 44px;
+  padding: 12px 4px;
   background: transparent;
   border: none;
 }
@@ -75,10 +78,11 @@
 .section:not(:last-child)::after {
   content: "";
   display: block;
-  margin-top: 32px;
+  margin-top: 36px;
   height: 1px;
   background: rgba(0,0,0,0.06);
 }
+
 
 
     h2 {
@@ -153,19 +157,23 @@
 
     /* other alt additivities fro spotify */
 
+
 .spotify-card {
+  margin-top: 14px;
+  padding: 0;
+  background: transparent;
+  box-shadow: none;
   border-radius: 14px;
   overflow: hidden;
-  background: #fff9;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
-  margin-top: 14px;
 }
 
 .spotify-card iframe {
   width: 100%;
-  height: 180px; /* smaller, cute */
+  height: 220px;
   border: none;
 }
+
+
 /* other alt additivities for sound cloud */
 
 /* SoundCloud Beautiful Card UI */
@@ -321,9 +329,29 @@
   }
 
   /* Spotify / SoundCloud cards */
-  .spotify-card iframe {
-    height: 200px !important;
-  }
+  
+.spotify-card {
+  border-radius: 14px;
+  overflow: hidden;
+  background: #fff9;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+  margin-top: 14px;
+}
+
+.spotify-card iframe {
+  width: 100%;
+  height: 152px;
+  border: none;
+  display: block;
+}
+
+.spotify-card {
+  padding: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+
   .sc-profile-embed {
     height: 360px !important;
   }
@@ -434,37 +462,49 @@
     </div>
   </header>
 
-  <!-- SPOTIFY SECTION -->
+ <!-- SPOTIFY SECTION -->
 <section class="section">
   <h2>Spotify Releases</h2>
   <div class="muted">My official works published on Spotify.</div>
 
   <!-- Spotify Playlist Embed (kept large) -->
-  <div class="embed" style="height: 260px; margin-top:14px;">
-    <iframe 
-      src="https://open.spotify.com/embed/playlist/2v6Qu1WvxvmMbOFRQpsY9f?utm_source=generator"
+  <div class="embed" style="height:230px; margin-top:14px;">
+    <iframe
+      src="https://open.spotify.com/embed/playlist/2v6Qu1WvxvmMbOFRQpsY9f"
+      style="width:100%; height:100%; border:none;"
       allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
     </iframe>
   </div>
 
-  <!-- Individual Tracks as cute cards -->
+  <!-- Individual Tracks -->
   <div class="spotify-card">
-    <iframe src="https://open.spotify.com/embed/track/5pZstQGpYxQ48bSK9QDVLZ?utm_source=generator"
-      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <iframe
+      src="https://open.spotify.com/embed/track/5pZstQGpYxQ48bSK9QDVLZ"
+      style="width:100%; height:152px; border:none;"
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      loading="lazy">
+    </iframe>
   </div>
 
   <div class="spotify-card">
-    <iframe src="https://open.spotify.com/embed/track/6LbOcPrk8a84yzUFgcFTq9?utm_source=generator"
-      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <iframe
+      src="https://open.spotify.com/embed/track/6LbOcPrk8a84yzUFgcFTq9"
+      style="width:100%; height:152px; border:none;"
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      loading="lazy">
+    </iframe>
   </div>
 
   <div class="spotify-card">
-    <iframe src="https://open.spotify.com/embed/track/19ucy7PdRlvTMx5PUoJQ1g?utm_source=generator"
-      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <iframe
+      src="https://open.spotify.com/embed/track/19ucy7PdRlvTMx5PUoJQ1g"
+      style="width:100%; height:152px; border:none;"
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      loading="lazy">
+    </iframe>
   </div>
-
-  <!-- ADD MORE SONGS BELOW -->
 </section>
+
 
 
   <!-- SOUNDCLOUD -->
