@@ -66,12 +66,20 @@
     }
 
     .section {
-      margin-bottom: 32px;
-      padding: 20px;
-      background: #ffffffdd;
-      border-radius: 12px;
-      border: 1px solid #0001;
-    }
+  margin-bottom: 40px;
+  padding: 0;
+  background: transparent;
+  border: none;
+}
+
+.section:not(:last-child)::after {
+  content: "";
+  display: block;
+  margin-top: 32px;
+  height: 1px;
+  background: rgba(0,0,0,0.06);
+}
+
 
     h2 {
       margin: 0 0 10px 0;
@@ -137,6 +145,11 @@
       color: var(--text);
       font-size: 20px;
     }
+
+
+    .gallery-item img {
+  cursor: zoom-in;
+}
 
     /* other alt additivities fro spotify */
 
@@ -488,7 +501,7 @@
 
      
     <div class="gallery-item">
-      <img src="assets/lyric2.jpg" alt="Lyric Work 2" onclick="openImage(this.src)">
+      <img src="assets/lyric2.png" alt="Lyric Work 2" onclick="openImage(this.src)">
     </div>
 
     <div class="gallery-item">
